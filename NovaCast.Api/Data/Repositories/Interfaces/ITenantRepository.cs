@@ -1,6 +1,11 @@
-﻿namespace NovaCast.Admin.Api.Data.Repositories.Interfaces
+﻿using NovaCast.Api.Models.Entities;
+
+namespace NovaCast.Api.Data.Repositories.Interfaces;
+
+public interface ITenantRepository
 {
-    public class ITenantRepository
-    {
-    }
+    Task<Tenant?> GetByApiKeyAsync(string apiKey, CancellationToken cancellationToken = default);
+    Task<Tenant?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
+    Task<TenantChannel?> GetChannelAsync(Guid tenantId, string channel, CancellationToken cancellationToken = default);
+    Task<TenantNotificationType?> GetNotificationTypeAsync(Guid tenantId, string type, CancellationToken cancellationToken = default);
 }

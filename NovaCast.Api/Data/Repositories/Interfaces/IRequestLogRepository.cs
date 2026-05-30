@@ -1,6 +1,8 @@
-﻿namespace NovaCast.Admin.Api.Data.Repositories.Interfaces
+﻿using NovaCast.Api.Models.Entities;
+
+namespace NovaCast.Api.Data.Repositories.Interfaces;
+
+public interface IRequestLogRepository
 {
-    public class IRequestLogRepository
-    {
-    }
+    Task CreateAsync(RequestLog requestLog, CancellationToken cancellationToken = default);
 }
