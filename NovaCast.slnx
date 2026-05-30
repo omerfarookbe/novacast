@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="NovaCast.Admin.Api/NovaCast.Admin.Api.csproj" />
+  <Project Path="NovaCast.Api/NovaCast.Api.csproj" />
+  <Project Path="NovaCast.Consumer/NovaCast.Consumer.csproj" />
+  <Project Path="NovaCast.Contracts/NovaCast.Contracts.csproj" />
+</Solution>

@@ -1,0 +1,6 @@
+@NovaCast.Api_HostAddress = http://localhost:5122
+
+GET {{NovaCast.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
