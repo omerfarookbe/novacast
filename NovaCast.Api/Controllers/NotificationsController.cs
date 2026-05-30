@@ -1,4 +1,4 @@
-﻿namespace NovaCast.Admin.Api.Controllers
+﻿namespace NovaCast.Api.Controllers
 {
     public class NotificationsController
     {
