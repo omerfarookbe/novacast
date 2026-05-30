@@ -1,4 +1,4 @@
-﻿namespace NovaCast.Admin.Api.Common.Exceptions
+﻿namespace NovaCast.Api.Common.Exceptions
 {
     public class TenantNotFoundException
     {

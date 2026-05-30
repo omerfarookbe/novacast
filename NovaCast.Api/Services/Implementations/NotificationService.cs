@@ -1,4 +1,4 @@
-﻿namespace NovaCast.Admin.Api.Services.Implementations
+﻿namespace NovaCast.Api.Services.Implementations
 {
     public class NotificationService
     {

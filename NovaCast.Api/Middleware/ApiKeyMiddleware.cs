@@ -1,4 +1,4 @@
-﻿namespace NovaCast.Admin.Api.Middleware
+﻿namespace NovaCast.Api.Middleware
 {
     public class ApiKeyMiddleware
     {

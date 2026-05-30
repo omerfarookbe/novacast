@@ -1,4 +1,4 @@
-﻿namespace NovaCast.Admin.Api.Extensions
+﻿namespace NovaCast.Api.Extensions
 {
     public class ApplicationBuilderExtensions
     {
