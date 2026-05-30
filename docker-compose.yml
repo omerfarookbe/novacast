@@ -90,3 +90,17 @@ services:
       interval: 15s
       timeout: 10s
       retries: 5
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: novacast-kafka-ui
+    environment:
+      KAFKA_CLUSTERS_0_NAME: novacast-local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+    ports:
+      - "8090:8080"
+    depends_on:
+      kafka:
+        condition: service_healthy
+    networks:
+      - novacast-network
