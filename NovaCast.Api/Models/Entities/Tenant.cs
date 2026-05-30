@@ -1,5 +1,4 @@
-﻿using NovaCast.Admin.Api.Models.Entities;
-using NovaCast.Contracts.Enums;
+﻿using NovaCast.Contracts.Enums;
 
 namespace NovaCast.Api.Models.Entities;
 
