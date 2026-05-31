@@ -1,6 +1,8 @@
-﻿namespace NovaCast.Api.Common.Exceptions
+﻿namespace NovaCast.Api.Common.Exceptions;
+
+public class RateLimitExceededException : Exception
 {
-    public class RateLimitExceededException
+    public RateLimitExceededException(string message) : base(message)
     {
     }
 }
