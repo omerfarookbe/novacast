@@ -1,6 +1,6 @@
-﻿namespace NovaCast.Api.Models.DTOs.Requests
+﻿namespace NovaCast.Api.Models.DTOs.Requests;
+
+public class UpdateChannelRequest
 {
-    public class UpdateChannelRequest
-    {
-    }
+    public string Credentials { get; set; } = default!;
 }
