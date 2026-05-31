@@ -62,7 +62,7 @@ public class ConfigController : ControllerBase
         // Service layer will handle update — coming in next iteration
         await _tenantService.InvalidateTenantCacheAsync(tenant.Id, cancellationToken);
 
-        return Ok(ApiResponse<object>.Ok(null, "Channel updated successfully"));
+        return Ok(ApiResponse<object>.Ok(new { }, "Channel updated successfully"));
     }
 
     [HttpPatch("channels/{channel}/toggle")]
@@ -84,6 +84,6 @@ public class ConfigController : ControllerBase
 
         await _tenantService.InvalidateTenantCacheAsync(tenant.Id, cancellationToken);
 
-        return Ok(ApiResponse<object>.Ok(null, $"Channel {(request.IsEnabled ? "enabled" : "disabled")} successfully"));
+        return Ok(ApiResponse<object>.Ok(new { }, $"Channel {(request.IsEnabled ? "enabled" : "disabled")} successfully"));
     }
 }
