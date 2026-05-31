@@ -1,7 +1,5 @@
 ﻿using NovaCast.Api.Models.DTOs.Requests;
 using NovaCast.Api.Models.DTOs.Responses;
-using NovaCast.Api.Models.DTOs.Requests;
-using NovaCast.Api.Models.DTOs.Responses;
 using NovaCast.Api.Models.Entities;
 
 namespace NovaCast.Api.Services.Interfaces;

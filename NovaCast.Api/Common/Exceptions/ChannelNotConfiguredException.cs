@@ -1,6 +1,8 @@
-﻿namespace NovaCast.Api.Common.Exceptions
+﻿namespace NovaCast.Api.Common.Exceptions;
+
+public class ChannelNotConfiguredException : Exception
 {
-    public class ChannelNotConfiguredException
+    public ChannelNotConfiguredException(string message) : base(message)
     {
     }
 }
